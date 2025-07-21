@@ -216,3 +216,14 @@ header {
 .home-link:hover .main-title {
   color: #9a8c98; 
 }
+/* STYLE PORTFOLIO PAGE */
+.portfolio-main {
+  flex: 1;
+  text-align: center;
+  padding-top: 6rem;
+  font-family: 'Arima', sans-serif;
+  background: linear-gradient(135deg, #faf2e9,#e1dad2, #4b362d);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
