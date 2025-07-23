@@ -298,3 +298,17 @@ header {
 .envelope-wrapper:hover .envelope-label::after {
   width: 100%;
 }
+
+.envelope-bg {
+  background-image: url("assets/portfolioBackground.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
