@@ -217,11 +217,18 @@ header {
   color: #9a8c98; 
 }
 /* STYLE PORTFOLIO PAGE */
+.envelope-gallery {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .envelope-container {
-  width: 250px;
-  height: 180px;
+  width: 300px;
+  height: 220px;
   position: relative;
-  margin: 2rem;
+  background: none;
 }
 
 .envelope {
@@ -239,9 +246,10 @@ header {
   top: 0;
   left: 0;
   transition: all 0.6s ease;
+  background: transparent; /* fixes the gray square issue */
 }
 
-/* z-index order */
+/* Z-index stacking */
 .back   { z-index: 1; }
 .photo  {
   z-index: 2;
@@ -254,7 +262,7 @@ header {
   transform-origin: top center;
 }
 
-/* Hover interaction */
+/* Hover effect */
 .envelope:hover .flap {
   transform: rotateX(-120deg);
 }
