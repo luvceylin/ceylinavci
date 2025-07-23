@@ -73,7 +73,7 @@ img#intro {
 /*Portfolio button */
 .portfolio-button{
   background-color:#4b362d; 
-  font-family:'Arima';
+  font-family:'Ballet';
   font-size: 24px;
   color: #f2e9e4; 
   border: none; 
@@ -105,7 +105,7 @@ img#intro {
 }
 
 body {
-  font-family: 'Arima';
+  font-family: 'Ballet';
   background-color: #f2e9e4;
   text-align: center;
 }
@@ -272,15 +272,17 @@ header {
 
 /*portfolio page text labels*/
 .envelope-label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Arima';
   font-size: 1.2em;
   color: #4b362d;
   background-color: #f2e9e4;
   padding: 5px 10px;
   border-radius: 5px;
+  position: relative;
+  text-align: center;
 }
 
 .envelope-label::after {
