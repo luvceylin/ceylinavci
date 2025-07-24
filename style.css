@@ -312,3 +312,54 @@ header {
   max-width: 90%;
   margin: 0 auto;
 }
+/* ART SECTION CODE*/
+
+.art-section {
+ height: 100vh;
+  padding: 60px 20px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+ scroll-snap-align: start;
+    }
+
+    .art-container {
+      background-color: #fffdf9;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      max-width: 700px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .art-container img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.4s ease;
+    }
+
+    .art-container:hover img {
+      transform: scale(1.03);
+    }
+
+    .caption {
+      margin-top: 15px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.4rem;
+      color: #7f5d54;
+      background-color: #f2e9e4;
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    
+    html {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
