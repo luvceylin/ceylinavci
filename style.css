@@ -315,16 +315,26 @@ header {
 /* ART SECTION CODE*/
 
 .art-section {
- height: 100vh;
-  padding: 60px 20px;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
- scroll-snap-align: start;
-    }
+  padding: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.reference-box {
+  margin-top: 10px;
+  font-family: 'Arima', cursive;
+  font-size: 1rem;
+  background-color: #f6eee4;
+  color: #4b362d;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 90%;
+}
+
 
     .art-container {
       background-color: #fffdf9;
