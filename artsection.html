@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Art Portfolio</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Portfolio</title>
 
-    <!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Ballet:opsz@16..72&family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Ballet:opsz@16..72&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+
   <header>
     <a href="index.html" class="home-link">
-    <h1 class="main-title">Ceylin A.</h1>
+      <h1 class="main-title">Ceylin A.</h1>
     </a>
     <div class="title-box"></div>
   </header>
-   
-  <section class="art-collage">
-  <div class="collage-grid">
-    <img src="assets/littleduckie.png" alt="Art 1" data-title="My Little Duckie" data-desc="For a highschool art class" />
-    <img src="assets/art2.png" alt="Art 2" data-title="Ottoman Princess" data-desc="Acrylic painting with dramatic lighting and ethereal fabrics" />
-    <img src="assets/art3.png" alt="Art 3" data-title="Midsummer Dream" data-desc="Experimenting with pastel tones and dreamy textures" />
-    <!-- Add more -->
-  </div>
-</section>
 
-<div id="fullscreenModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <img id="modalImg" src="" alt="">
-    <div class="modal-caption">
-      <h2 id="modalTitle"></h2>
-      <p id="modalDesc"></p>
+  <section class="art-section">
+    <h1>My Art Collage</h1>
+    <div class="gallery">
+      <div class="gallery-item" data-title="Title 1" data-description="Description of artwork 1">
+        <img src="images/polaroid1.png" alt="Art 1" />
+      </div>
+      <div class="gallery-item" data-title="Title 2" data-description="Description of artwork 2">
+        <img src="images/polaroid1.png" alt="Art 2" />
+      </div>
+      <div class="gallery-item" data-title="Title 3" data-description="Description of artwork 3">
+        <img src="images/polaroid1.png" alt="Art 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Attempt -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
     </div>
   </div>
-</div>
-
-  
-
-
-    
-
 
 </body>
 </html>
