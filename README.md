@@ -1,29 +1,57 @@
-# ceylinavci
+
 # 🌿 
+# Ceylin Avci- Ceylin's Portfolio — 
 
-My personal website!
-hello!
-As of right now, there are a few interactive features. Click on the 'view my portfolio' button 
-and then you can select and click an envelope to see either some art work or my computer science work
-(empty for now as i have no super impressive projects) 
+Welcome to my personal portfolio website! 
 
-I am working through this to figure out how github works, so sorry if key features suck. 
+##  What This Project Is
 
-I used ai to help create css envelope animation and to spot some conflicting css issues!!
+**"Ceylin's Portfolio"** is a website I designed and coded to showcase both some art work and computer science work of mine. The site features:
 
-##  Features
+- An interactive **envelope selection screen** where it opens on hover 
+- Cute and expressive **design** that I feel truly reflects my personality and aesthetic
+- 2 different curated **project sections** in order to display art and future coding projects seperately. 
 
-- **Art Collage Gallery**  
-- **Interactive Envelope Art Gallery (CSS-only)** 
-- **Custom Styling**  
-- **Projects + About Me**  
+---
 
-## Built With
+##  Why I Made This
 
-- HTML5  
-- CSS3  
-- Google Fonts: `Ballet`, `Arima`, `Quicksand`, `Dancing Script`
+I wanted a portfolio that felt like me and truly had feautures I liked looking at ! I wanted to build a project that represents both sides of me, combining my interest in creative design with technical work. The envelope art, in particular, is a feature I had in mind from the start. By designing my own website, I was able to create my own little corner on the internet!
 
+---
+
+##  How I Made It
+
+I built this site with:
+
+- **HTML5** 
+- **CSS3** for all styling and animations (including the envelope hover effect)
+- **Flexbox ** for picture layout
+- **Google Fonts** (`Ballet`, `Arima`, `Quicksand`, and `Dancing Script`) for expressive typography
+- A warm, earth-toned **beige color palette** to reflect my aesthetic
+
+The envelope animation was created entirely with HTML and CSS. It uses 3D transforms, pseudo-elements, and keyframe transitions to simulate an envelope flap opening smoothly when hovered.
+
+Most of the code was from past HTML knowledge, however my css effects and collage required some research. I used ai to help debug the css envelope animation and to spot some conflicting css issues!!
+
+
+---
+
+##  What I Struggled With & What I Learned
+
+### Challenges:
+- **3D envelope animation:** I had not worked with hover effects before so getitng the envelope to look right and align correctly took a lot of effort. 
+- -**Getting CSS Grid to work the way I wanted:**  
+  I originally tried to use CSS Grid to create a “gallery wall” effect for my envelope art, but I couldn't get it to work. The images were different sizes and didn’t align the way I wanted. Everything looked too rigid or broken on smaller screens. 
+-**Code got very unorganized:*
+My indents were all over the place, my css had so many seemingly unneccesary and duplicate code that messed up the whole project when removed. It got really frustrating to try and fix one issue and cause several others. 
+
+### What I Learned:
+- How to **use 3D CSS transforms** 
+- How to **debug** 
+-How to stay **organized** when writing code
+
+---
 
 Check out the live site here:  
 [Playable Site](https://luvceylin.github.io/ceylinavci/)
@@ -37,4 +65,7 @@ View the code here:
 
 I’m a high school student passionate about computer science, visual art, and design. My goal is to build projects that combine beauty and function, and this site is a reflection of both my technical skills and creative identity.
 
----
+
+Thanks for visiting! 💌  
+This site will continue to evolve as I create more projects!
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
