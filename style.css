@@ -331,7 +331,6 @@ header {
   display: block;
 }
 
-/* Fix the grid item aspect ratio */
 .photo-wall > * {
   aspect-ratio: 3 / 2; 
   overflow: hidden; 
@@ -371,4 +370,40 @@ header {
   border-radius: 8px;
   display: inline-block;
   max-width: 90%;
+}
+/*Music section*/
+.music-main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.music-title {
+  font-family: 'Ballet', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.music-block {
+  background-color: #f6f0e4;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.music-block h3 {
+  font-family: 'Arima', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
