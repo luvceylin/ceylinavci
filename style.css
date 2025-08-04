@@ -300,123 +300,46 @@ header {
   margin: 0 auto;
 }
 
-/* ========== ART COLLAGE ========== */
+/* Art Collage container */
+/* Art Section container */
 .art-section {
-  padding: 2rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.art-container {
   background-color: #fffdf9;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-  position: relative;
-  max-width: 700px;
-  width: 90%;
+  padding: 4rem 1rem;
   text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.art-container img {
-  width: 100%;
-  border-radius: 12px;
-  transition: transform 0.4s ease;
-}
-
-.art-container:hover img {
-  transform: scale(1.03);
-}
-
-.caption {
-  margin-top: 15px;
-  font-size: 1.4rem;
-  color: #7f5d54;
-  background-color: #f2e9e4;
-  padding: 10px 15px;
-  border-radius: 8px;
-  display: inline-block;
-}
-
-.art-collage .collage-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.art-collage img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  object-fit: cover;
-  aspect-ratio: 3/4;
-}
-
-.art-collage img:hover {
-  transform: scale(1.05);
-}
-
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  padding: 4rem 2rem;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 20px;
-  max-width: 600px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.2);
-  animation: fadeIn 0.3s ease;
-}
-
-.modal-content img {
-  max-width: 100%;
-  border-radius: 12px;
-}
-
-.modal-caption {
-  margin-top: 1rem;
-  font-family: 'Arima', cursive;
+.art-section h2 {
+  font-family: 'Ballet', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   color: #4b362d;
 }
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #333;
+.photo-wall {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.photo-wall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills cell, minimal crop */
+  border-radius: 4px;
+  display: block;
 }
+
+/* Fix the grid item aspect ratio */
+.photo-wall > * {
+  aspect-ratio: 4 / 3; /* or 3 / 2, or 1 / 1, whatever fits your images best */
+  overflow: hidden; /* hide overflow for cropping */
+}
+
+
+
 
 /* ========== CS SECTION ========== */
 .cs-section {
