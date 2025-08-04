@@ -300,7 +300,6 @@ header {
   margin: 0 auto;
 }
 
-/* Art Collage container */
 /* Art Section container */
 .art-section {
   background-color: #fffdf9;
@@ -334,8 +333,8 @@ header {
 
 /* Fix the grid item aspect ratio */
 .photo-wall > * {
-  aspect-ratio: 4 / 3; /* or 3 / 2, or 1 / 1, whatever fits your images best */
-  overflow: hidden; /* hide overflow for cropping */
+  aspect-ratio: 3 / 2; 
+  overflow: hidden; 
 }
 
 
