@@ -2,8 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const clickSound = new Audio("assets/click.mp3");
 
   function playClickSound() {
+    e.preventDefault();
     clickSound.currentTime = 0;
-    clickSound.play();
+    clickSound.play().catch(err => console.warn("Audio play blocked:", err));
+
+    const link = e.currentTarget;
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 150);
   }
 
   const portfolioButton = document.querySelector(".portfolio-button");
