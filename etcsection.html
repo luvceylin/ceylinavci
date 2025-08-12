@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My etc. :) - Ceylin A.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Ballet:opsz@16..72&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #faf2e9;
+      font-family: 'Arima', sans-serif;
+      color: #4b362d;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Ballet', cursive;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-family: 'Ballet', cursive;
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      user-select: none;
+      border-bottom: 2px solid #d77fa1;
+      padding-bottom: 0.2rem;
+    }
+
+    .content-section {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding-left: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .content-section.open {
+      max-height: 500px; /* enough to show content */
+      margin-bottom: 2rem;
+    }
+
+    /* Add a subtle plus/minus sign before h2 */
+    h2::before {
+      content: '+ ';
+      color: #d77fa1;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    h2.open::before {
+      content: '- ';
+    }
+  </style>
+</head>
+<body>
+  <h1>My etc. :)</h1>
+
+  <h2 class="toggle">Personal Interests & Hobbies</h2>
+  <div class="content-section">
+    <ul>
+      <li>Books I love: <em>The Alchemist, To Kill a Mockingbird</em></li>
+      <li>Favorite movies: <em>Amélie, Spirited Away</em></li>
+      <li>Dream travel destinations: Kyoto, Iceland</li>
+      <li>Journaling & poetry</li>
+    </ul>
+  </div>
+
+  <h2 class="toggle">Life & Wellness</h2>
+  <div class="content-section">
+    <p>My self-care routine includes daily skincare, meditation, and figure skating sessions.</p>
+    <p>Favorite quote: “Stars can't shine without darkness.”</p>
+  </div>
+
+  <h2 class="toggle">Fun Projects & Volunteering</h2>
+  <div class="content-section">
+    <ul>
+      <li>DIY crafts and coding side projects</li>
+      <li>Volunteer experience with TED Talks translation</li>
+      <li>Community clubs and leadership roles</li>
+    </ul>
+  </div>
+
+  <h2 class="toggle">Photos & Memories</h2>
+  <div class="content-section">
+    <p>Gallery coming soon! For now, imagine snapshots from skating, family, and friends.</p>
+  </div>
+
+  <script>
+    // JS for toggling the collapsible sections
+    document.querySelectorAll('.toggle').forEach((header) => {
+      header.addEventListener('click', () => {
+        header.classList.toggle('open');
+        const content = header.nextElementSibling;
+        content.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

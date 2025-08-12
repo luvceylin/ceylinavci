@@ -14,6 +14,7 @@ body {
   background-color: #faf2e9;
   text-align: center;
   font-family: 'Ballet';
+  
 }
 
 /* ========== TYPOGRAPHY ========== */
@@ -200,9 +201,33 @@ header {
 /* ========== ENVELOPE GALLERY ========== */
 .envelope-gallery {
   display: flex;
-  gap: 40px;
+  gap: 1px;
   justify-content: center;
   margin-top: 3rem;
+  
+  max-width: 1000px;
+  padding-left: 40px;  
+  padding-right: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.envelope-bg {
+  background-image: url("assets/portfolioBackground.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  border-radius: 30px;
+  max-width: 320px;    
+  width: 100%;         
+  margin:1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .envelope-container {
@@ -286,20 +311,50 @@ header {
   width: 100%;
 }
 
-.envelope-bg {
-  background-image: url("assets/portfolioBackground.png");
-  background-size: cover;
-  background-position: center;
-  padding: 40px;
-  border-radius: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  max-width: 90%;
-  margin: 0 auto;
+/* ========== RESPONSIVE SIZING ========== */
+@media (max-width: 1024px) {
+  .envelope-container {
+    width: 220px;
+    height: 160px;
+  }
+
+  .envelope-bg {
+    max-width: 240px;
+    padding: 30px;
+  }
 }
 
+@media (max-width: 768px) {
+  .envelope-container {
+    width: 160px;
+    height: 120px;
+  }
+
+  .envelope-bg {
+    max-width: 180px;
+    padding: 20px;
+  }
+
+  .envelope-label {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .envelope-container {
+    width: 130px;
+    height: 100px;
+  }
+
+  .envelope-bg {
+    max-width: 140px;
+    padding: 15px;
+  }
+
+  .envelope-label {
+    font-size: 0.9em;
+  }
+}
 /* Art Section container */
 .art-section {
   background-color: #fffdf9;
