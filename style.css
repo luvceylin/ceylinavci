@@ -201,38 +201,52 @@ header {
 /* ========== ENVELOPE GALLERY ========== */
 .envelope-gallery {
   display: flex;
-  gap: 1px;
+  gap: 30px;
+  flex-wrap:wrap;
   justify-content: center;
-  margin-top: 3rem;
-  
-  max-width: 1000px;
-  padding-left: 40px;  
-  padding-right: 40px;
-
-  margin-left: auto;
-  margin-right: auto;
-
+  margin: 3rem auto;
+  max-width: 900px;
+  padding:0 20px;
 }
 
 .envelope-bg {
   background-image: url("assets/portfolioBackground.png");
   background-size: cover;
   background-position: center;
-  padding: 40px;
+  padding: 30px;
   border-radius: 30px;
-  max-width: 320px;    
+  max-width: 250px;    
   width: 100%;         
   margin:1rem;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
+@media (max-width: 1024px) {
+  .envelope-bg {
+    max-width: 200px;
+    padding: 25px;
+  }
+  .envelope-container {
+    width: 180px;
+    height: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .envelope-bg {
+    max-width: 170px;
+    padding: 20px;
+  }
+  .envelope-container {
+    width: 150px;
+    height: 110px;
+  }
+}
 
 .envelope-container {
-  width: 300px;
-  height: 220px;
+  width: 220px;
+  height: 160px;
   position: relative;
 }
 
