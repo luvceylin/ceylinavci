@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const clickSound = new Audio("assets/click.mp3");
 
-  function playClickSound() {
+  function playClickSound(e) {
     e.preventDefault();
     clickSound.currentTime = 0;
     clickSound.play().catch(err => console.warn("Audio play blocked:", err));
