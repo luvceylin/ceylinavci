@@ -16,7 +16,7 @@ Welcome to my personal portfolio website!
 
 ##  Why I Made This
 
-I wanted a portfolio that felt like me and truly had feautures I liked looking at ! I wanted to build a project that represents both sides of me, combining my interest in creative design with technical work. The envelope art, in particular, is a feature I had in mind from the start. By designing my own website, I was able to create my own little corner on the internet!
+I wanted a portfolio that felt like me and truly had feautures I liked looking at ! It later shifted more from a portfolio to a personal website where I experimented with css. I wanted to build a project that represents both sides of me, combining my interest in creative design with technical work. The envelope art, in particular, is a feature I had in mind from the start. By designing my own website, I was able to create my own little corner on the internet! i really beleive I can continue to improve this website to better represent all the things I love!
 
 ---
 
@@ -26,7 +26,6 @@ I built this site with:
 
 - **HTML5** 
 - **CSS3** for all styling and animations (including the envelope hover effect)
-- **Flexbox ** for picture layout
 - **Google Fonts** (`Ballet`, `Arima`, `Quicksand`, and `Dancing Script`) for expressive typography
 - A warm, earth-toned **beige color palette** to reflect my aesthetic
 
@@ -40,7 +39,7 @@ Most of the code was from past HTML knowledge, however my css effects and collag
 ##  What I Struggled With & What I Learned
 
 ### Challenges:
-- **3D envelope animation:** I had not worked with hover effects before so getitng the envelope to look right and align correctly took a lot of effort. 
+- **3D envelope animation:** I had not worked with hover effects before so gettng the envelope to look right and align correctly took a lot of effort. 
 - -**Getting CSS Grid to work the way I wanted:**  
   I originally tried to use CSS Grid to create a “gallery wall” effect for my envelope art, but I couldn't get it to work. The images were different sizes and didn’t align the way I wanted. Everything looked too rigid or broken on smaller screens. 
 -**Code got very unorganized:*
