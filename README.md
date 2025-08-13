@@ -31,7 +31,7 @@ I built this site with:
 
 The envelope animation was created entirely with HTML and CSS. It uses 3D transforms and keyframe transitions to simulate an envelope flap opening smoothly when hovered.
 
-Most of the code was from past HTML knowledge, however my css effects and art/ newspaper required some research. I used ai to help debug the css envelope animation and to spot some conflicting css issues!!
+Most of the basic code was from past HTML knowledge, however my css effects and art/ newspaper required some research. I used ai to help debug the css envelope animation and to spot some conflicting css issues!!
 
 
 ---
@@ -42,7 +42,7 @@ Most of the code was from past HTML knowledge, however my css effects and art/ n
 - **3D envelope animation:** I had not worked with hover effects before so getting the envelope to look right and align correctly took a lot of effort. 
 - -**Getting CSS Grid to work the way I wanted:**  
   I originally tried to use CSS Grid to create a “gallery wall” effect for my envelope art, but I couldn't get it to work. The images were different sizes and didn’t align the way I wanted. Everything looked too rigid or broken on smaller screens. 
--**Code got very unorganized:*
+-**Code got very unorganized:**
 My indents were all over the place, my css had so many seemingly unneccesary and duplicate code that messed up the whole project when removed. It got really frustrating to try and fix one issue and cause several others. 
 
 ### What I Learned:
