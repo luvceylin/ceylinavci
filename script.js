@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const link = e.currentTarget;
     setTimeout(() => {
       window.location.href = link.href;
-    }, 150);
+    }, 350);
   }
 
   const portfolioButton = document.querySelector(".portfolio-button");

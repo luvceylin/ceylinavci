@@ -37,7 +37,7 @@ body {
 header .name,
 header .cool {
   position: relative;
-  z-index: 2; /* Fix: text above title-box */
+  z-index: 2; 
 }
 
 p {
@@ -50,7 +50,7 @@ p {
   color: #4b362d;
   font-family: 'Ballet', cursive;
   position: relative;
-  z-index: 2; /* Fix: text above title-box */
+  z-index: 2; 
 }
 
 .envelope-label, .caption, .reference-box {
@@ -114,7 +114,7 @@ img#intro {
 header {
   position: relative;
   padding: 20px 0;
-  z-index: 1; /* create stacking context */
+  z-index: 1; 
 }
 
 .title-box {
@@ -129,11 +129,11 @@ header {
   z-index: 0; /* behind text */
 }
 
-/* link wrapping header text */
+
 .home-link {
   text-decoration: none;
   position: relative;
-  z-index: 3; /* above title box, catch clicks */
+  z-index: 3; 
   display: inline-block;
 }
 
@@ -395,7 +395,7 @@ header {
 .photo-wall img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills cell, minimal crop */
+  object-fit: cover; 
   border-radius: 4px;
   display: block;
 }
@@ -475,4 +475,145 @@ header {
   font-family: 'Arima', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+/*ETC SECTION*/
+.newspaper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  padding: 40px;
+}
+
+.newspaper-header {
+  border-top: 4px solid #4b362d;
+  border-bottom: 2px solid #4b362d;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.newspaper-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #4b362d;
+}
+
+.newspaper-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #c3b1a2;
+    font-family: 'Lora', serif;
+}
+
+.date-line {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #9a8c98;
+}
+
+/* Main Grid Layout */
+.newspaper-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Article Styles */
+.article {
+  break-inside: avoid;
+  margin-bottom: 25px;
+}
+
+.article-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  border-bottom: 1px solid #c3b1a2;
+  padding-bottom: 8px;
+  color: #4b362d;
+}
+
+.article-subtitle {
+  font-style: italic;
+  color: #c3b1a2;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.article-content {
+  font-size: 0.95rem;
+  text-align: justify;
+  columns: 1;
+  font-family: 'Playfair Display', serif;
+}
+
+.article-content p {
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.featured-article {
+  grid-column: span 2;
+  border: 2px solid #4b362d;
+  padding: 20px;
+  background: #e1dad2;
+}
+
+.featured-article .article-title {
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 2px solid #4b362d;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  color: #4b362d;
+}
+
+.small-article .article-title {
+  font-size: 1.3rem;
+}
+
+.small-article .article-content {
+  font-size: 0.9rem;
+}
+
+.article-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.article-list li {
+  padding: 8px 0;
+  border-bottom: 1px dotted #ccc;
+    font-family: 'Lora', serif;
+}
+
+.article-list li:before {
+  content: "♥ ";
+  color: #c3b1a2;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bold-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
